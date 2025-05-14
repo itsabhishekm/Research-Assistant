@@ -128,8 +128,6 @@ streamlit run main.py
 
 ## 📸 Screenshots
 
-*(UI screenshots inside the `/assets` folder and embed here)*
-
 ![image](https://github.com/user-attachments/assets/5a6b93b3-c5ed-433b-907a-fba6ce9687cc)
 
 
