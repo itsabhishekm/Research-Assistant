@@ -39,7 +39,7 @@ Research Assistant is a local AI assistant that helps users understand academic 
 
 * PDFs are parsed using `pdfplumber`, and the extracted text is cleaned.
 * The text is split into overlapping chunks to maintain context coherence.
-* Each chunk is embedded using a pre-trained `SentenceTransformer` (e.g., `all-MiniLM`).
+* Each chunk is embedded using a pre-trained `SentenceTransformer`.
 * These embeddings are stored alongside the original text for fast retrieval.
 
 ---
@@ -47,18 +47,17 @@ Research Assistant is a local AI assistant that helps users understand academic 
 ## Directory Structure
 
 ```
-research-assistant-rag/
+Research-Assistant/
 ├── app/
-│   ├── __init__.py
+│   ├── main.py           # Streamlit app entry point
 │   ├── parser.py         # PDF parsing and text cleaning
 │   ├── pipeline.py       # Chunking, embedding, retrieval logic
 │   ├── model.py          # GPT-J 
 │   ├── config.py         # Declaring Constants for chunk size, model name, etc.
+|   ├── ui.py             # UI designed using streamlit
 │
-├── main.py              # Streamlit app entry point
 ├── requirements.txt     # Python dependencies
 ├── README.md            # You're here yay!!
-├── .gitignore           # Ignore cache, model weights, etc.
 ├── demo/                # screenshots of the demo
 ```
 
