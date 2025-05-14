@@ -1,6 +1,3 @@
-# Research-Assistant
-Retrieval-Augmented Generation (RAG) assistant to help first-time readers better understand academic papers,
-
 # Research Assistant
 
 Research Assistant is a local AI assistant that helps users understand academic papers by asking natural language questions. This assistant uses a Retrieval-Augmented Generation (RAG) pipeline powered by GPT-J and vector search to provide grounded, context-aware answers from PDF research papers.
@@ -53,16 +50,16 @@ Research Assistant is a local AI assistant that helps users understand academic 
 research-assistant-rag/
 ├── app/
 │   ├── __init__.py
-│   ├── parser.py         # PDF parsing & text cleaning
+│   ├── parser.py         # PDF parsing and text cleaning
 │   ├── pipeline.py       # Chunking, embedding, retrieval logic
-│   ├── model.py          # GPT-J answer generation
-│   ├── config.py         # Constants for chunk size, model name, etc.
+│   ├── model.py          # GPT-J 
+│   ├── config.py         # Declaring Constants for chunk size, model name, etc.
 │
 ├── main.py              # Streamlit app entry point
 ├── requirements.txt     # Python dependencies
-├── README.md            # You're here
+├── README.md            # You're here yay!!
 ├── .gitignore           # Ignore cache, model weights, etc.
-├── assets/              # Optional: screenshots or sample PDFs
+├── demo/                # screenshots of the demo
 ```
 
 ---
@@ -134,6 +131,10 @@ streamlit run main.py
 *(You can place UI screenshots inside the `/assets` folder and embed here)*
 
 ---
+
+## Future scope
+
+The current version is the Phase 1 of the project and in the phase 2 I am working on to builing a actual agent tailored to the specific use case and also palnned to shift my frontend to reac.js and also add some 3d elements using tree.js.
 
 ## Referrence
 
