@@ -7,7 +7,7 @@ from streamlit_pdf_viewer import pdf_viewer
 import time
 
 def run_app():
-    st.set_page_config(page_title="📚 Research Assistant", layout="wide")
+    st.set_page_config(page_title=" Research Assistant", layout="wide")
 
     if "pdf_uploaded" not in st.session_state:
         st.session_state.pdf_uploaded = False
@@ -21,7 +21,7 @@ def run_app():
     # Upload Screen
     if not st.session_state.pdf_uploaded:
         st.markdown("<div style='text-align: center; margin-top: 150px;'>", unsafe_allow_html=True)
-        st.title("📚 Research Assistant for First-Time Readers")
+        st.title("Research Assistant for First-Time Readers")
         uploaded_file = st.file_uploader("Upload a research paper (PDF)", type="pdf", label_visibility="visible")
         st.markdown("</div>", unsafe_allow_html=True)
 
@@ -45,11 +45,11 @@ def run_app():
         pdf_col, chat_col = st.columns([2, 1])
 
         with pdf_col:
-            st.subheader("📄 Paper Viewer")
+            st.subheader(" Paper Viewer")
             pdf_viewer(st.session_state.pdf_path, width=700, height=1000)
 
         with chat_col:
-            st.subheader("💬 Ask a Question")
+            st.subheader(" Ask a Question")
             with st.container():
                 st.markdown(
                     """
@@ -59,24 +59,24 @@ def run_app():
                 user_question = st.text_input("", placeholder="Ask your question here...")
 
                 if user_question:
-                    with st.spinner("🤖 Thinking..."):
+                    with st.spinner(" Thinking..."):
                         chunks, scores = st.session_state.rag.retrieve_relevant_chunks(user_question)
                         top_score = scores[0]
 
                         if top_score <= 0.3:
                             response = (
-                                "🤖 The paper doesn’t directly cover this. "
+                                " The paper doesn’t directly cover this. "
                                 "I’ll explore online to help find an answer."
                             )
                         else:
                             context = " ".join(chunks)
                             response = st.session_state.llm.generate_answer(user_question, context)
 
-                    st.markdown("### 🧾 Answer")
+                    st.markdown("###  Answer")
                     st.success(response)
 
                     if top_score > 0.3:
-                        with st.expander("🔍 Context from paper"):
+                        with st.expander("Context from paper"):
                             for i, chunk in enumerate(chunks):
                                 st.markdown(f"**Chunk {i+1}**: {chunk[:500]}...")
 
