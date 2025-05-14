@@ -11,10 +11,15 @@ chromadb>=0.4.13
 # PDF Parsing
 pdfplumber>=0.10.2
 
-# Frontend UI
+# UI
 streamlit>=1.30.0
 streamlit-pdf-viewer>=0.1.1
 
-# Utility Libraries
+# Other Libraries
 numpy>=1.24.0
+pandas>=1.5.3
 scikit-learn>=1.2.0
+matplotlib>=3.6.0
+seaborn>=0.12.2
+tqdm>=4.66.1
+python-dotenv>=1.0.0
