@@ -7,7 +7,7 @@ Research Assistant is a local AI assistant that helps users understand academic 
 
 --
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ### 📈 Frontend
 
