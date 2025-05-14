@@ -1,6 +1,6 @@
 # Research Assistant
 
-Research Assistant is a local AI assistant that helps users understand academic papers by asking natural language questions. This assistant uses a Retrieval-Augmented Generation (RAG) pipeline powered by GPT-J and vector search to provide grounded, context-aware answers from PDF research papers.
+Research Assistant is a local AI assistant that helps users understand academic papers by asking natural language questions. This assistant uses a Retrieval-Augmented Generation (RAG) pipeline powered by GPT-J and vector search to provide context-aware answers from PDF research papers.
 
 ---
 
