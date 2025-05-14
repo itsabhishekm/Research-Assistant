@@ -1,1 +1,20 @@
+# Model
+transformers>=4.36.0
+torch>=2.0.0
+accelerate>=0.24.0         # It will really helps with large model loading like the GPT-J
+bitsandbytes>=0.42.0       # It's not mandatory but optional recommended for GPU memory optimization
 
+# Embedding and Vector Search
+sentence-transformers>=2.2.2
+chromadb>=0.4.13
+
+# PDF Parsing
+pdfplumber>=0.10.2
+
+# Frontend UI
+streamlit>=1.30.0
+streamlit-pdf-viewer>=0.1.1
+
+# Utility Libraries
+numpy>=1.24.0
+scikit-learn>=1.2.0
