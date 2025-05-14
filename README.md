@@ -5,11 +5,11 @@ Retrieval-Augmented Generation (RAG) assistant to help first-time readers better
 
 Research Assistant is a local AI assistant that helps users understand academic papers by asking natural language questions. This assistant uses a Retrieval-Augmented Generation (RAG) pipeline powered by GPT-J and vector search to provide grounded, context-aware answers from PDF research papers.
 
---
+---
 
 ##  System Architecture
 
-### 📈 Frontend
+### Frontend
 
 * I have used **Streamlit** to build the user interface.
 * Users can upload a PDF, view the document, and interact with the chatbot in a responsive two-column layout.
@@ -135,18 +135,13 @@ streamlit run main.py
 
 ---
 
-##  Roadmap
+## Referrence
 
-* [ ] Add summarization toggle
-* [ ] Let users highlight parts of the PDF and ask questions about them
-* [ ] Add citation references in answers
-* [ ] Export Q\&A logs to markdown or PDF
-* [ ] Deploy to Hugging Face Spaces (with GPU runtime)
-
----
-
-## 🧠 Credits
-
-* Built using [Hugging Face Transformers](https://huggingface.co/transformers/)
-* Powered by [ChromaDB](https://www.trychroma.com/)
+* Hugging Face Transformers (language models including GPT-J): https://huggingface.co/transformers
+* GPT-J (EleutherAI) model card: https://huggingface.co/EleutherAI/gpt-j-6B
+* ChromaDB (vector storage engine): https://www.trychroma.com or https://docs.trychroma.com
+* Sentence Transformers (embeddings): https://www.sbert.net
+* pdfplumber (PDF text extraction): https://github.com/jsvine/pdfplumber
+* Streamlit (frontend framework): https://streamlit.io
+* streamlit-pdf-viewer: https://pypi.org/project/streamlit-pdf-viewer
 * Inspired by our team faced issues while researching new fields
