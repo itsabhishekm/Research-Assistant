@@ -69,8 +69,8 @@ research-assistant-rag/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/research-assistant-rag.git
-cd research-assistant-rag
+git clone https://github.com/itsabhishekm/Research-Assistant.git
+cd Research-Assistant
 ```
 
 ### 2. Install Python Dependencies
@@ -128,7 +128,7 @@ streamlit run main.py
 
 ## 📸 Screenshots
 
-*(You can place UI screenshots inside the `/assets` folder and embed here)*
+*(UI screenshots inside the `/assets` folder and embed here)*
 
 ---
 
